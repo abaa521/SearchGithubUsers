@@ -20,7 +20,7 @@ const Jumbotron = () => {
     return (
         <Row>
             <Col span={24}>
-                <Card style={JumbotronStyle}>
+                <Card style={JumbotronStyle} >
                     <h1>github用戶名搜索</h1>
                     <Input.Search
                         spellCheck="false"
