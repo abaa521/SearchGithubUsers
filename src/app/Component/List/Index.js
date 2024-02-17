@@ -21,7 +21,7 @@ const List = () => {
             setError(null);
             setUsers(null);
             //取得user
-            console.log("正在搜索");
+            console.log("正在搜尋");
             try {
                 const response = await axios.get(`https://api.github.com/search/users?q=${searchTerm}`);
                 setUsers(response.data.items); // 假设您想要的数据在 items 属性中
@@ -46,13 +46,13 @@ const List = () => {
     return (
         <Row gutter={[16, 16]}>
             {isFirstLoad ? (
-                <h1>尚未進行搜索</h1>
+                <h1>尚未進行搜尋</h1>
             ) : isLoading ? (
-                <h1>正在搜索</h1>
+                <h1>正在搜尋</h1>
             ) : error != null ? (
                 <h1>{error}</h1>
             ) : (!users || users.length === 0) ? (
-                <h1>未搜索到任何使用者</h1>
+                <h1>未搜尋到任何使用者</h1>
             ) : (
                 users.map((user) => (
                     <Col key={user.id} xs={12} sm={12} md={6} lg={6} xl={4}>

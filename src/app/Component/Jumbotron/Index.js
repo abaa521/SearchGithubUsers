@@ -21,10 +21,10 @@ const Jumbotron = () => {
         <Row>
             <Col span={24}>
                 <Card style={JumbotronStyle} >
-                    <h1>github用戶名搜索</h1>
+                    <h1>github用戶名搜尋</h1>
                     <Input.Search
                         spellCheck="false"
-                        placeholder="輸入搜索內容"
+                        placeholder="輸入搜尋內容"
                         allowClear
                         onSearch={onSearch}
                         style={{ width: 200 }}
