@@ -24,7 +24,7 @@ const Jumbotron = () => {
                     <h1>github用戶名搜索</h1>
                     <Input.Search
                         spellCheck="false"
-                        placeholder="输入搜索内容"
+                        placeholder="輸入搜索內容"
                         allowClear
                         onSearch={onSearch}
                         style={{ width: 200 }}
